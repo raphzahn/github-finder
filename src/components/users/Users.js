@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import UserItem from './UserItem';
 
-class Users extends Component {
+const Users = (state) => {
     state = {
         users: [
             {
@@ -25,15 +25,15 @@ class Users extends Component {
         ]
     }
 
-    render() {
-        return (
-            <div className="user-cards">
-                {this.state.users.map(user => (
-                    <UserItem className="" key={user.id} user={user}/>
-                ))}
-            </div>
-        )
-    }
+
+    return (
+        <div className="user-cards">
+            {state.users.map(user => (
+                <UserItem className="" key={user.id} user={user}/>
+            ))}
+        </div>
+    )
+
 }
 
 export default Users;
