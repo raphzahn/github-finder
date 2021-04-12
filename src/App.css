@@ -116,6 +116,12 @@ img {
   margin: 0.7rem 0;
 }
 
+.user-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
 /* List */
 .list {
   margin: 0.5rem 0;
